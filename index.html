@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="keywords" data="vormir.co,vormir,annonymous messages," charset="UTF-8">
+<title>Vormir.co.in</title>
+</head>
+<body bgcolor="black" text="yellow" >
+<center>
+<form method="POST" action="https://script.google.com/macros/s/AKfycbyGT-FbG_CmZV5EhmZnOYuIQYJ1XaYhNsBOTDFXgqyzw5xfDkP-YJV9oa7OFSpfQYB_/exec" name="vormir">
+<br><br><br>
+<h1 style="color:yellow;background-color:blue">| Enter your message here |</h1><br>
+<textarea rows="2" cols="50" name="Message" id="mes"></textarea><br>
+<input type="submit" value="send" bgcolor="yellow">
+</form>
+<h2 style="color:cyan">\\\\\\\\\\\\\\\\\\\\\\\\</h2>
+<h2 style="color:yellow">////////////////</h2>
+<h2 style="color:cyan">\\\\\\\\</h2>
+<h2 style="color:yellow">\\\\</h2>
+</center>
+
+<script type="text/javascript">
+window.addEventListener("load", function() {
+  const form = document.getElementById('my-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Success!");
+    })
+  });
+});
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
+
